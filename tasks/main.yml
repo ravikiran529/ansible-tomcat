@@ -47,18 +47,18 @@
   when: ansible_service_mgr == "systemd"
 - name: Copy tomcat server.xml file
   template:
-    src: templates/server.xml
-    dest: "{{ base_dir }}/conf/"
+    src: templates/server.xml.j2
+    dest: "{{ base_dir }}/conf/server.xml"
   notify: restart service
 - name: copy tomcat-users.xml file
   template:
-    src: templates/tomcat-users.xml
-    dest: "{{ base_dir }}/conf/"
+    src: templates/tomcat-users.xml.j2
+    dest: "{{ base_dir }}/conf/tomcat-users.xml"
   notify: restart service
 - name: Copy tomcat context.xml file
   template:
-    src: templates/context.xml
-    dest: "{{ base_dir }}/webapps/host-manager/META-INF/"
+    src: templates/context.xml.j2
+    dest: "{{ base_dir }}/webapps/host-manager/META-INF/context.xml"
   notify: restart service
 - name: Start and enable service for tomcat
   service:
