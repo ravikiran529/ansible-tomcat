@@ -9,3 +9,5 @@ http_port: 9090
 https_port: 9001
 shutdown_port: 8005
 ajp_port: 8009
+nexus_username: username_of_nexus
+nexus_pass: nexus_password
