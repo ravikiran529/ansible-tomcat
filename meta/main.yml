@@ -1,6 +1,6 @@
 galaxy_info:
   author: Ravikiran
-  description: DevOps Engineer
+  description: Ansible role for installing multiple tomcat instances on Ubuntu.
   company: Anvipro IT Solutions
 
   # If the issue tracker for your role is not on github, uncomment the
