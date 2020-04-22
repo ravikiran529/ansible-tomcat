@@ -2,7 +2,7 @@
 # tasks file
 - name: Install basic packages
   package:
-    name: ["vim","wget","unzip","curl","git"]
+    name: ["vim", "wget", "unzip", "curl", "git"]
     state: present
 - name: Install java
   apt:
