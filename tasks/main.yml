@@ -71,8 +71,8 @@
   maven_artifact:
     group_id: com.exapmle
     artifact_id: java-maven
-    repository_url: 'http://localhost:8081/repository/maven-snapshots/'
+    repository_url: 'http://localhost:8081/repository/maven-releases/'
     username: "{{ nexus_username }}"
     password: "{{ nexus_pass }}"
-    dest: "{{ base_dir }}/webapps/webapps.war"
+    dest: "{{ base_dir }}/webapps/webapp.war"
     
